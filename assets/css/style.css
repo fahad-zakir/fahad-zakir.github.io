@@ -401,9 +401,8 @@ textarea.form-control {
 }
 
 .start {
-	font-family: Raleway, "Times New Roman", Times, sans-serif;
-	font-size: 30px;
-	font-style: normal;
+	font-size: 25px;
+	font-style: bold;
 	text-transform: none;
 	margin: 15px 0;
 }
