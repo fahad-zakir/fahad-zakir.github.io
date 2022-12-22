@@ -419,6 +419,13 @@ textarea.form-control {
 	padding: 20px 20px;
 	margin: 0 0 20px;
 }
+.marriott {
+	padding: 5px;
+}
+
+.photon {
+	padding: 3px;
+}
 
 .iconbox:hover {
 	-webkit-transition: all 200ms ease-in;
@@ -499,7 +506,13 @@ textarea.form-control {
 /* ---------------------------------------------- /*
  * Footer
 /* ---------------------------------------------- */
-
+.experience {
+	text-align: center;
+}
+.education {
+	display: flex;
+	justify-content: center;
+}
 
 #footer {
 	background: #222;
