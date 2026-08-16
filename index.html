@@ -1,450 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120813003-1"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         
-         function gtag() {
-         	dataLayer.push(arguments);
-         }
-         gtag('js', new Date());
-         
-         gtag('config', 'UA-120813003-1');
-      </script>
-      <title>Fahad-Zakir-Portfolio</title>
-      <!-- CSS -->
-      <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-      <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
-      <link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
-      <link rel="stylesheet" href="assets/css/chocolat.css">
-      <link href="assets/css/animate.css" rel="stylesheet">
-      <link rel="icon" href="assets/images/favicon.ico">
-      <!-- Custom styles CSS -->
-      <link href="assets/css/style.css" rel="stylesheet" media="screen">
-      <script src="assets/js/modernizr.custom.js"></script>
-   </head>
-   <body>
-      <!-- Preloader -->
-      <div id="preloader">
-         <div id="status"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fahad Zakir — Full-Stack AI Engineer. I ship LLM products, React + Python platforms, and production AI systems. Aurora, IL. US Citizen."
+    />
+    <meta name="author" content="Fahad Zakir" />
+    <meta name="theme-color" content="#07080d" />
+    <title>Fahad Zakir · Full-Stack AI Engineer</title>
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120813003-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-120813003-1");
+    </script>
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <canvas id="orbits" aria-hidden="true"></canvas>
+
+    <div id="loader">
+      <div class="loader-mark">FZ</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+
+    <header class="nav">
+      <a class="logo" href="#top">Fahad Zakir</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Let’s talk</a>
+      </nav>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <div class="mobile-nav">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow reveal">
+          <span class="pulse"></span>
+          Available for full-time &amp; contract · Aurora, IL · US Citizen
+        </p>
+        <h1 class="reveal">
+          I ship full-stack
+          <em>AI products</em>
+          that actually go to production.
+        </h1>
+        <p class="lede reveal">
+          Full-Stack AI Engineer &amp; Prompt Engineer. From LLM evaluation and safety
+          rubrics to React, Node, Python, AWS, and Azure — I solve messy business
+          problems and deliver complete systems.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn primary" href="#work">See selected work</a>
+          <a class="btn ghost" href="Fahad-Zakir-Resume.pdf" download>Download résumé</a>
+        </div>
+        <div class="stats reveal">
+          <article>
+            <strong>5+</strong>
+            <span>years shipping product</span>
+          </article>
+          <article>
+            <strong>Meta</strong>
+            <span>LLM eval &amp; prompt engineering</span>
+          </article>
+          <article>
+            <strong>1st</strong>
+            <span>ARDA 2022 award — Marriott</span>
+          </article>
+          <article>
+            <strong>AI</strong>
+            <span>Azure OpenAI · LangChain · RAG</span>
+          </article>
+        </div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>React</span><span>Next.js</span><span>TypeScript</span><span>Python</span>
+          <span>Node.js</span><span>Nest.js</span><span>Azure OpenAI</span><span>AWS</span>
+          <span>LangChain</span><span>LangGraph</span><span>RAG</span><span>Twilio</span>
+          <span>MongoDB</span><span>SQL</span><span>Redux</span><span>TanStack</span>
+          <span>React</span><span>Next.js</span><span>TypeScript</span><span>Python</span>
+          <span>Node.js</span><span>Nest.js</span><span>Azure OpenAI</span><span>AWS</span>
+          <span>LangChain</span><span>LangGraph</span><span>RAG</span><span>Twilio</span>
+        </div>
       </div>
-      <!-- Home start -->
-      <section id="home" class="pfblock-image screen-height">
-         <div class="home-overlay"></div>
-         <div class="intro">
-            <h2 class="start">Hello, my name is Fahad Zakir and I am</h2>
-            <h1>Full Stack Web Developer</h1>
-         </div>
-         <a href="#services">
-            <div class="scroll-down">
-               <span>
-               <i class="fa fa-angle-down fa-2x"></i>
-               </span>
+
+      <section id="work" class="section">
+        <div class="section-head reveal">
+          <p class="kicker">Selected work</p>
+          <h2>The work hiring managers actually care about.</h2>
+          <p>
+            Production AI, enterprise frontend, and full-stack delivery — not tutorial
+            demos.
+          </p>
+        </div>
+        <div class="work-grid">
+          <article class="work-card featured reveal">
+            <div class="work-meta">
+              <span>2025 – 2026</span>
+              <span class="tag">LLM · Meta</span>
             </div>
-         </a>
+            <h3>LLM evaluation &amp; prompt engineering for Meta</h3>
+            <p>
+              Trained and tested LLM models for Meta. Evaluated prompt responses and
+              model performance across deployments, enforced safety guidelines, and
+              improved accuracy with rubric-based scoring and documentation frameworks.
+            </p>
+            <ul class="chips">
+              <li>Prompt engineering</li>
+              <li>Safety &amp; compliance</li>
+              <li>Model evaluation</li>
+            </ul>
+          </article>
+
+          <article class="work-card reveal">
+            <div class="work-meta">
+              <span>2024</span>
+              <span class="tag">Azure OpenAI</span>
+            </div>
+            <h3>AI chatbot suite</h3>
+            <p>
+              Built customizable AI assistants on Azure OpenAI — scheduling, order-taking,
+              and bot-builder flows that persist in the cloud and export into other apps.
+            </p>
+            <ul class="chips">
+              <li>Azure OpenAI</li>
+              <li>React</li>
+              <li>Bot builder</li>
+            </ul>
+          </article>
+
+          <article class="work-card reveal">
+            <div class="work-meta">
+              <span>2024</span>
+              <span class="tag">Voice AI</span>
+            </div>
+            <h3>Voice-activated appointment scheduler</h3>
+            <p>
+              Clients book and cancel services over the phone. Twilio + Python backend,
+              React frontend, NLP voice interpretation, and automated scheduling logic.
+            </p>
+            <ul class="chips">
+              <li>Twilio</li>
+              <li>Python</li>
+              <li>NLP</li>
+              <li>React</li>
+            </ul>
+          </article>
+
+          <article class="work-card reveal">
+            <div class="work-meta">
+              <span>2024</span>
+              <span class="tag">SaaS · AWS</span>
+            </div>
+            <h3>Cloud AI management dashboard</h3>
+            <p>
+              Real-time business intelligence for SaaS clients: KPIs, analytics, and
+              metrics with a responsive React UI, error handling, and AWS-backed data.
+            </p>
+            <ul class="chips">
+              <li>React</li>
+              <li>AWS</li>
+              <li>Data viz</li>
+            </ul>
+          </article>
+
+          <article class="work-card reveal">
+            <div class="work-meta">
+              <span>2022</span>
+              <span class="tag">Enterprise</span>
+            </div>
+            <h3>React architecture — Northern Trust</h3>
+            <p>
+              Modern React components with hooks, Redux, and Saga for an enterprise
+              financial platform. Jest/Enzyme coverage, API integrations, loading states,
+              and data filtration.
+            </p>
+            <ul class="chips">
+              <li>React</li>
+              <li>Redux + Saga</li>
+              <li>Jest</li>
+            </ul>
+          </article>
+
+          <article class="work-card award reveal">
+            <div class="work-meta">
+              <span>2021 – 2022</span>
+              <span class="tag gold">ARDA 1st Place</span>
+            </div>
+            <h3>Points system platform — Marriott Vacations</h3>
+            <p>
+              End-to-end points management from concept to production: full CRUD, 100%
+              W3C accessibility, and dynamic UI. Awarded 1st place at ARDA 2022.
+            </p>
+            <ul class="chips">
+              <li>JavaScript</li>
+              <li>Accessibility</li>
+              <li>CRUD</li>
+            </ul>
+          </article>
+        </div>
       </section>
-      <!-- Home end -->
-      <!-- Navigation start -->
-      <header class="header">
-         <nav class="navbar navbar-custom" role="navigation">
-            <div class="container">
-               <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="index.html">Fahad Zakir</a>
-               </div>
-               <div class="collapse navbar-collapse" id="custom-collapse">
-                  <ul class="nav navbar-navnav navbar-nav navbar-right">
-                     <li>
-                        <a href="#home">Home</a>
-                     </li>
-                     <li>
-                        <a href="#services">About</a>
-                     </li>
-                     <li>
-                        <a href="#portfolio">Portfolio</a>
-                     </li>
-                     <li>
-                        <a href="#contact">Contact</a>
-                     </li>
-                  </ul>
-               </div>
+
+      <section id="experience" class="section">
+        <div class="section-head reveal">
+          <p class="kicker">Experience</p>
+          <h2>A track record of shipping, not just consulting decks.</h2>
+        </div>
+        <ol class="timeline">
+          <li class="reveal">
+            <time>Jul 2021 — Present</time>
+            <div>
+              <h3>Full-Stack AI Engineer</h3>
+              <p class="org">Z Full-Stack AI Solutions</p>
+              <p>
+                Own LLM evaluation, prompt engineering, Azure OpenAI chatbots, voice
+                scheduling, SaaS dashboards, and enterprise React architecture for
+                clients including Meta, Northern Trust, and Marriott Vacations.
+              </p>
             </div>
-            <!-- .container -->
-         </nav>
-      </header>
-      <!-- Navigation end -->
-      <!-- Services start -->
-      <section id="services" class="pfblock pfblock-gray">
-         <div class="container">
-            <div class="picture-row row">
-               <div class="col-md-6">
-                  <img class="img-responsive my-pict wow slideInLeft" src="assets/images/me.png" alt="my-pict">
-               </div>
-               <div class="col-md-6 wow slideInRight">
-                  <p class="about">Building innovative digital products and helping brands maximize their true
-                     potential in the
-                     digital world is a passion
-                     of mine.
-                  </p>
-               </div>
+          </li>
+          <li class="reveal">
+            <time>Mar 2019 — Feb 2020</time>
+            <div>
+              <h3>Web Developer</h3>
+              <p class="org">CompuSystems · Downers Grove, IL</p>
+              <p>
+                Trade exhibitor JSP sites, JavaScript/jQuery forms, SQL troubleshooting,
+                registration and payment flows, and business rules for pricing and
+                discounts.
+              </p>
             </div>
-            <div class="row">
-               <div class="col-sm-12">
-                  <div class="pfblock-header wow fadeInUp experience">
-                     <h2 class="pfblock-title">Experience</h2>
-                     <div class="pfblock-line"></div>
-                  </div>
-               </div>
+          </li>
+          <li class="reveal">
+            <time>Aug 2018 — Dec 2018</time>
+            <div>
+              <h3>Software Engineer</h3>
+              <p class="org">Photon Infotech · Walgreens Boots Alliance, Deerfield, IL</p>
+              <p>
+                Microservices migration from Angular to jQuery/React with a Spring Boot
+                backend. SonarQube style-guide coverage and AJAX activity-log features.
+              </p>
             </div>
-            <div class="row">
-               <div class="col-sm-3">
-                  <div class="iconbox wow slideInLeft">
-                     <div class="iconbox-icon">
-                        <img class="GA img-responsive wow slideInLeft" src="assets/images/northern-trust.jpg" alt="nt">
-                     </div>
-                     <div class="iconbox-text">
-                        <h3 class="iconbox-title">Front-end Developer - Northern Trust</h3>
-                        <div class="iconbox-desc">
-                           Creating new React components, using Redux & Saga for a new section on the business site.
-                           Adding features like spinners during wait time, calculating totals with filters for showing error messages.
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-3">
-                  <div class="iconbox wow slideInLeft">
-                     <div class="iconbox-icon">
-                        <img class="GA img-responsive wow slideInLeft" src="assets/images/marriott.jpg" width="60px" alt="marriott">
-                     </div>
-                     <div class="iconbox-text">
-                        <h3 class="iconbox-title">Front-end Developer - Marriott Vacations Worldwide</h3>
-                        <div class="iconbox-desc marriott">
-                           Developed a dynamic app for SCT platform, earned first place on 2022 ARDA awards list.
-                           Created a calculation app using JavaScript, jQuery, with JSON data.
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-3">
-                  <div class="iconbox wow slideInLeft">
-                     <div class="iconbox-icon">
-                        <img class="GA img-responsive wow slideInLeft" src="assets/images/compu-systems.png" width="60px" alt="marriott">
-                     </div>
-                     <div class="iconbox-text">
-                        <h3 class="iconbox-title">Web Developer - CompuSystems</h3>
-                        <div class="iconbox-desc">
-                           Worked on attendee registration websites for specific period delivery due dates. JavaScript and jQuery was used to manipulate the UI for input forms. 
-                           Methods were imported that applied discounts for registraion fees. 
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-3">
-                  <div class="iconbox wow slideInLeft">
-                     <div class="iconbox-icon">
-                        <img class="GA img-responsive wow slideInLeft" src="assets/images/photon.png" alt="my-pict">
-                     </div>
-                     <div class="iconbox-text">
-                        <h3 class="iconbox-title">Software Engineer - Photon</h3>
-                        <div class="iconbox-desc photon">
-                           Consultant for Walgreens: jQuery & React.js - Microservices: Converted Angular code
-                           base; SonarQube code coverage. Worked on balance to rewards section of site, displaying user exercise loggs.
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-sm-12">
-                  <div class="pfblock-header wow fadeInUp">
-                     <h2 class="pfblock-title">Education</h2>
-                     <div class="pfblock-line"></div>
-                  </div>
-               </div>
-               <div class="row education">
-                  <div class="col-sm-3">
-                     <div class="iconbox wow slideInRight">
-                        <div class="iconbox-icon">
-                           <img class="ga img-responsive wow slideInLeft" src="assets/images/general.png"
-                              alt="my-pict">
-                        </div>
-                        <div class="iconbox-text">
-                           <h3 class="iconbox-title">Full Stack Web Developer</h3>
-                           <div class="iconbox-desc">
-                              Nov 28, 2017 - March 2, 2018: Graduate of General Assembly; rated as one of the best
-                              boot camps
-                              (course-report).
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-sm-3">
-                     <div class="iconbox wow slideInRight">
-                        <div class="iconbox-icon">
-                           <img class="ua img-responsive wow slideInLeft" src="assets/images/udacity.png"
-                              alt="my-pict">
-                        </div>
-                        <div class="iconbox-text">
-                           <h3 class="iconbox-title">Front-End Web Developer</h3>
-                           <div class="iconbox-desc">
-                              Oct 2016 - Mar 2017: An intensive online course and upon completion I will receive a
-                              Nano-degree certificate.
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- .row -->
-         </div>
-         <!-- .container -->
+          </li>
+        </ol>
       </section>
-      <!-- Services end -->
-      <!-- Portfolio start -->
-      <section id="portfolio" class="pfblock">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-6 col-sm-offset-3">
-                  <div class="pfblock-header wow fadeInUp">
-                     <h1 class="pfblock-title">Projects</h1>
-                     <div class="pfblock-line"></div>
-                  </div>
-               </div>
-            </div>
-            <!-- .row -->
-            <div class="row">
-               <div class="col-xs-12 col-sm-4 col-md-4">
-                  <div class="grid wow zoomIn">
-                     <figure class="effect-bubba">
-                        <img src="assets/images/employee-dir.png" alt="employee-dir" />
-                        <figcaption>
-                           <a href="https://oj-employee-directory.web.app/" target="_blank">Click here</a>
-                           <h2>React & Firebase Employee Dir</h2>
-                        </figcaption>
-                     </figure>
-                  </div>
-               </div>
-               <div class="col-xs-12 col-sm-4 col-md-4">
-                  <div class="grid wow zoomIn">
-                     <figure class="effect-bubba">
-                        <img src="assets/images/project-3.png" alt="project03" />
-                        <figcaption>
-                           <h2>Gift Wish List: React & Node.js</h2>
-                           <a href="https://gifts-wish-list.onrender.com/" target="_blank">Click here to
-                           visit</a>
-                        </figcaption>
-                     </figure>
-                  </div>
-               </div>
-               <div class="col-xs-12 col-sm-4 col-md-4">
-                  <div class="grid wow zoomIn">
-                     <figure class="effect-bubba">
-                        <img src="assets/images/project-2.png" alt="project-2" />
-                        <figcaption>
-                           <h2>Retro Games-List: Node.js</h2>
-                           <a href="https://retro-games-list-node-express-mongodb.onrender.com" target="_blank">Click here to
-                           visit</a>
-                        </figcaption>
-                     </figure>
-                  </div>
-               </div>
-               <div class="col-xs-12 col-sm-4 col-md-4">
-                  <div class="grid wow zoomIn">
-                     <figure class="effect-bubba">
-                        <img src="assets/images/project-4.png" alt="project04" />
-                        <figcaption>
-                           <a href="https://frozen-lowlands-92480.herokuapp.com/" target="_blank">Click here</a>
-                           <h2>FamTime: React on Rails</h2>
-                        </figcaption>
-                     </figure>
-                  </div>
-               </div>
-               <div class="col-xs-12 col-sm-4 col-md-4">
-                  <div class="grid wow zoomIn">
-                     <figure class="effect-bubba">
-                        <img src="assets/images/project-1.png" alt="project01" />
-                        <figcaption>
-                           <h2>Jeopardy Online: jQuery</h2>
-                           <a href="https://cranky-chandrasekhar-36471e.netlify.app" target="_blank">Click here to
-                           visit</a>
-                        </figcaption>
-                     </figure>
-                  </div>
-               </div>
-               <div class="col-xs-12 col-sm-4 col-md-4">
-                  <div class="grid wow zoomIn">
-                     <figure class="effect-bubba">
-                        <img src="assets/images/project-6.png" alt="project06" />
-                        <figcaption>
-                           <a href="https://velvety-kulfi-34bd3e.netlify.app/"
-                              target="_blank"></a>
-                           <h2>Udacity Resume: jQuery</h2>
-                        </figcaption>
-                     </figure>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-sm-6 col-sm-offset-3">
-                  <div class="pfblock-header wow fadeInUp">
-                     <h1 class="pfblock-title">Online Tutorials</h1>
-                     <div class="pfblock-line"></div>
-                  </div>
-               </div>
-            </div>
-            <!-- .row -->
-            <div class="row">
-               <div class="col-xs-12 col-sm-4 col-md-4">
-                  <div class="grid wow zoomIn">
-                     <figure class="effect-bubba">
-                        <img src="assets/images/react-weather-app.png" alt="weather-app" />
-                        <figcaption>
-                           <h2>React-Weather-API</h2>
-                           <a href="https://astonishing-longma-8cb604.netlify.app" target="_blank">Click here to
-                           visit</a>
-                        </figcaption>
-                     </figure>
-                  </div>
-               </div>
-               <div class="col-xs-12 col-sm-4 col-md-4">
-                  <div class="grid wow zoomIn">
-                     <figure class="effect-bubba">
-                        <img src="assets/images/project-5.png" alt="project05" />
-                        <figcaption>
-                           <a href="https://jovial-kilby-73f05e.netlify.app" target="_blank"></a>
-                           <h2>Tints & Signs</h2>
-                        </figcaption>
-                     </figure>
-                  </div>
-               </div>
-               <div class="col-xs-12 col-sm-4 col-md-4">
-                  <div class="grid wow zoomIn">
-                     <figure class="effect-bubba">
-                        <img src="assets/images/roll-dice.png" alt="dice" />
-                        <figcaption>
-                           <h2>Roll-The-Dice: Vanilla JS</h2>
-                           <a href="http://fahadzakir.com/Vanilla-JavaScript-Roll-the-Dice-Game/"
-                              target="_blank">Click here to visit</a>
-                        </figcaption>
-                     </figure>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- .contaier -->
+
+      <section id="skills" class="section">
+        <div class="section-head reveal">
+          <p class="kicker">Stack</p>
+          <h2>The tools I use to go from idea to shipped product.</h2>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-card reveal">
+            <h3>Front-end</h3>
+            <p>React, Next.js, Redux, Saga, TanStack, JavaScript, TypeScript, HTML, CSS, jQuery, JSP</p>
+          </div>
+          <div class="skill-card reveal">
+            <h3>AI / LLM</h3>
+            <p>Prompt engineering, LLM evaluation, LangChain, LangGraph, RAG, NLP, ML, Azure OpenAI</p>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Back-end &amp; cloud</h3>
+            <p>Python, Node.js, Nest.js, PHP, MongoDB, SQL, NoSQL, AWS, Azure, BigQuery, Twilio</p>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Quality</h3>
+            <p>Jest, Enzyme, Git, accessibility (W3C), production debugging, CMS performance</p>
+          </div>
+        </div>
       </section>
-      <!-- Portfolio end -->
-      <!-- Skills start -->
-      <!-- CallToAction start -->
-      <section class="calltoaction">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12 col-lg-12">
-                  <h2 class="wow slideInRight" data-wow-delay=".1s">ARE YOU READY TO START?</h2>
-                  <div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
-                     I'm available for freelance projects.
-                  </div>
-               </div>
-               <div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
-                  <a href="#contact" class="btn btn-lg">Hire Me</a>
-               </div>
+
+      <section id="about" class="section about">
+        <div class="about-copy reveal">
+          <p class="kicker">About</p>
+          <h2>I work fast. I communicate clearly. I get the job done.</h2>
+          <p>
+            I’m Fahad Zakir — a Full-Stack AI Engineer based in Aurora, Illinois. I
+            build complete solutions: model eval, prompt systems, APIs, and interfaces
+            that real users can operate.
+          </p>
+          <p>
+            Teams hire me when they need someone who can sit with a messy problem,
+            design the architecture, and still write the React and Python that ships.
+          </p>
+          <div class="edu">
+            <div>
+              <h3>College of DuPage / Lewis University</h3>
+              <p>Software Development Degree — in progress</p>
             </div>
-            <!-- .row -->
-         </div>
-         <!-- .container -->
+            <div>
+              <h3>General Assembly</h3>
+              <p>Software Engineering Immersive Certificate · 2018</p>
+            </div>
+          </div>
+        </div>
+        <figure class="portrait reveal">
+          <img src="assets/images/fahad-new.jpg" alt="Fahad Zakir, Full-Stack AI Engineer" />
+          <figcaption>Aurora, IL · Open to on-site, hybrid, or remote</figcaption>
+        </figure>
       </section>
-      <div class="row">
-         <div class="pfblock-header wow fadeInUp">
-            <h1 class="pfblock-title">Where I have lived and worked</h1>
-            <div class="pfblock-line"></div>
-         </div>
-         <div class="map col-md-12">
-            <iframe class="map1 img-responsive" src="https://snazzymaps.com/embed/64639" width="900px" height="300px"
-               style="border:none;"></iframe>
-         </div>
-      </div>
-      <!-- Contact start -->
-      <section id="contact" class="pfblock">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-6 col-sm-offset-3">
-                  <div class="pfblock-header">
-                     <h2 class="pfblock-title-2">Let's Connect</h2>
-                     <div class="pfblock-line"></div>
-                  </div>
-               </div>
-            </div>
-            <!-- .row -->
-         </div>
-         <!-- .container -->
+
+      <section class="section extra">
+        <div class="section-head reveal">
+          <p class="kicker">Also built</p>
+          <h2>Personal products &amp; experiments.</h2>
+        </div>
+        <div class="link-grid">
+          <a class="link-card reveal" href="https://oj-employee-directory.web.app/" target="_blank" rel="noopener">
+            <span>Live</span>
+            <strong>Employee Directory</strong>
+            <em>React + Firebase</em>
+          </a>
+          <a class="link-card reveal" href="https://gifts-wish-list.onrender.com/" target="_blank" rel="noopener">
+            <span>Live</span>
+            <strong>Gift Wish List</strong>
+            <em>React + Node.js</em>
+          </a>
+          <a class="link-card reveal" href="https://retro-games-list-node-express-mongodb.onrender.com" target="_blank" rel="noopener">
+            <span>Live</span>
+            <strong>Retro Games List</strong>
+            <em>Node + Express + MongoDB</em>
+          </a>
+          <a class="link-card reveal" href="https://github.com/fahad-zakir" target="_blank" rel="noopener">
+            <span>GitHub</span>
+            <strong>Open source &amp; labs</strong>
+            <em>AI-Chat, forms, more</em>
+          </a>
+        </div>
       </section>
-      <!-- Contact end -->
-      <!-- Footer start -->
-      <footer id="footer">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
-                  <ul class="social-links">
-                     <li>
-                        <a href="https://www.linkedin.com/in/fahad-zakir" class="wow fadeInUp" data-wow-delay=".5s">
-                        <i class="fa fa-linkedin"></i>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="https://github.com/fahad-zakir" class="wow fadeInUp" data-wow-delay=".5s">
-                        <i class="fa fa-github"></i>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="https://twitter.com/FahadZakir7" class="wow fadeInUp" data-wow-delay=".1s">
-                        <i class="fa fa-twitter"></i>
-                        </a>
-                     </li>
-                  </ul>
-                  <p class="heart">
-                     Made with
-                     <span class="fa fa-heart fa-2x animated pulse"></span> in Nottingham
-                  </p>
-                  <p class="copyright">
-                     © 2018 Fahad Zakir, 407-446-9070, fahadzakir11@gmail.com
-                  </p>
-               </div>
-            </div>
-            <!-- .row -->
-         </div>
-         <!-- .container -->
-      </footer>
-      <!-- Footer end -->
-      <!-- Scroll to top -->
-      <div class="scroll-up">
-         <a href="#home">
-         <i class="fa fa-angle-up"></i>
-         </a>
-      </div>
-      <!-- Scroll to top end-->
-      <!-- Javascript files -->
-      <script src="assets/js/jquery-1.11.1.min.js"></script>
-      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-      <script src="assets/bootstrap/js/map.js"></script>
-      <script src="assets/js/jquery.parallax-1.1.3.js"></script>
-      <script src="assets/js/imagesloaded.pkgd.js"></script>
-      <script src="assets/js/jquery.sticky.js"></script>
-      <script src="assets/js/smoothscroll.js"></script>
-      <script src="assets/js/wow.min.js"></script>
-      <script src="assets/js/jquery.easypiechart.js"></script>
-      <script src="assets/js/waypoints.min.js"></script>
-      <script src="assets/js/jquery.cbpQTRotator.js"></script>
-      <script src="assets/js/custom.js"></script>
-   </body>
+
+      <section id="contact" class="section contact">
+        <div class="contact-card reveal">
+          <p class="kicker">Contact</p>
+          <h2>Let’s build something that ships.</h2>
+          <p>
+            If you need a full-stack AI engineer who can own evaluation, product UI, and
+            backend delivery — I’m ready.
+          </p>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:fahadzakir11@gmail.com">fahadzakir11@gmail.com</a>
+            <a class="btn ghost" href="tel:+14074469070">(407) 446-9070</a>
+          </div>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/fahad-zakir" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/fahad-zakir" target="_blank" rel="noopener">GitHub</a>
+            <a href="Fahad-Zakir-Resume.pdf" download>Résumé PDF</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Fahad Zakir. Designed to convert, not to decorate.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="assets/js/site.js"></script>
+  </body>
 </html>
