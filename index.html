@@ -466,7 +466,7 @@ h2 {
   margin-left: 8px;
 }
 
-.timeline li {
+.timeline > li {
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 24px;
@@ -474,7 +474,7 @@ h2 {
   position: relative;
 }
 
-.timeline li::before {
+.timeline > li::before {
   content: "";
   position: absolute;
   left: -5px;
@@ -484,6 +484,92 @@ h2 {
   border-radius: 50%;
   background: var(--teal);
   box-shadow: 0 0 0 6px rgba(78, 225, 198, 0.12);
+}
+
+.roles {
+  list-style: none;
+  margin-top: 22px;
+  display: grid;
+  gap: 14px;
+}
+
+.roles article {
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.roles h4 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.roles .when {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 4px 0 8px;
+}
+
+.roles ul {
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.roles li {
+  padding-bottom: 6px;
+}
+
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.quotes blockquote {
+  margin: 0;
+  padding: 28px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 220px;
+  transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+.quotes blockquote:hover {
+  transform: translateY(-4px);
+  border-color: rgba(78, 225, 198, 0.35);
+}
+
+.quotes p {
+  font-family: "Instrument Serif", serif;
+  font-size: 22px;
+  line-height: 1.35;
+  font-style: italic;
+}
+
+.quotes footer {
+  margin-top: auto;
+  padding: 0;
+  border: 0;
+  color: var(--muted);
+  font-size: 14px;
+  display: block;
+}
+
+.quotes footer span {
+  display: block;
+  color: var(--teal);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 4px;
 }
 
 .timeline time,
@@ -672,8 +758,9 @@ footer {
   .work-grid,
   .skill-grid,
   .link-grid,
+  .quotes,
   .about,
-  .timeline li {
+  .timeline > li {
     grid-template-columns: 1fr;
   }
   .work-card.featured {
@@ -724,6 +811,7 @@ footer {
       <nav>
         <a href="#work">Work</a>
         <a href="#experience">Experience</a>
+        <a href="#testimonials">References</a>
         <a href="#skills">Skills</a>
         <a href="#about">About</a>
         <a class="nav-cta" href="#contact">Let’s talk</a>
@@ -736,6 +824,7 @@ footer {
     <div class="mobile-nav">
       <a href="#work">Work</a>
       <a href="#experience">Experience</a>
+      <a href="#testimonials">References</a>
       <a href="#skills">Skills</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -921,11 +1010,64 @@ footer {
             <div>
               <h3>Full-Stack AI Engineer</h3>
               <p class="org">Z Full-Stack AI Solutions</p>
-              <p>
-                Own LLM evaluation, prompt engineering, Azure OpenAI chatbots, voice
-                scheduling, SaaS dashboards, and enterprise React architecture for
-                clients including Meta, Northern Trust, and Marriott Vacations.
-              </p>
+              <div class="roles">
+                <article>
+                  <h4>LLM model evaluation &amp; prompt engineering for Meta</h4>
+                  <span class="when">2025 – 2026</span>
+                  <ul>
+                    <li>Trained and tested LLM models for Meta, evaluating prompt responses and model performance across multiple deployments.</li>
+                    <li>Ensured compliance with safety guidelines, prevented sensitive content, and optimized model accuracy using rubrics and documentation frameworks.</li>
+                  </ul>
+                </article>
+                <article>
+                  <h4>AI chatbot suite (Azure OpenAI)</h4>
+                  <span class="when">2024</span>
+                  <ul>
+                    <li>Built customizable AI assistants on Azure OpenAI, including a bot-builder for scheduling, order-taking, and other client workflows.</li>
+                    <li>Persisted assistant profiles in Azure OpenAI so teams could export and reuse them in other applications.</li>
+                  </ul>
+                </article>
+                <article>
+                  <h4>Voice-activated appointment scheduler (Twilio + Python + React)</h4>
+                  <span class="when">2024</span>
+                  <ul>
+                    <li>Built an appointment system so clients can book and manage services over the phone via Twilio.</li>
+                    <li>Full-stack delivery: Python backend, React frontend, automated scheduling logic, and NLP voice interpretation.</li>
+                  </ul>
+                </article>
+                <article>
+                  <h4>SaaS cloud AI management dashboard (React + AWS)</h4>
+                  <span class="when">2024</span>
+                  <ul>
+                    <li>Created a real-time business intelligence platform using React and AWS.</li>
+                    <li>Displays KPIs, analytics, and business metrics with a responsive UI, error handling, and data visualization for SaaS clients.</li>
+                  </ul>
+                </article>
+                <article>
+                  <h4>React component &amp; frontend architecture (Northern Trust)</h4>
+                  <span class="when">2022</span>
+                  <ul>
+                    <li>Developed modern React components using hooks, class components, Redux state management, and Saga middleware.</li>
+                    <li>Implemented Jest/Enzyme unit testing, API integrations, loading states, and data filtration for an enterprise financial platform.</li>
+                  </ul>
+                </article>
+                <article>
+                  <h4>ARDA award-winning points system (Marriott Vacations)</h4>
+                  <span class="when">2021 – 2022</span>
+                  <ul>
+                    <li>Built an end-to-end points management system from concept to production.</li>
+                    <li>Implemented full CRUD, 100% W3C accessibility compliance, and dynamic UI. Won 1st place ARDA 2022.</li>
+                  </ul>
+                </article>
+                <article>
+                  <h4>Web development &amp; CMS optimization</h4>
+                  <span class="when">2021</span>
+                  <ul>
+                    <li>Personalized HTML, CSS, and JavaScript for client CMS websites.</li>
+                    <li>Optimized site performance, updated plugins, and debugged daily deployments.</li>
+                  </ul>
+                </article>
+              </div>
             </div>
           </li>
           <li class="reveal">
@@ -952,6 +1094,27 @@ footer {
             </div>
           </li>
         </ol>
+      </section>
+
+      <section id="testimonials" class="section">
+        <div class="section-head reveal">
+          <p class="kicker">References</p>
+          <h2>What people who've worked with me say.</h2>
+        </div>
+        <div class="quotes">
+          <blockquote class="reveal">
+            <p>“Dependable, capable, reliable. Strong problem-solving. Gets quality work done.”</p>
+            <footer>Ed Chase<span>Northern Trust</span></footer>
+          </blockquote>
+          <blockquote class="reveal">
+            <p>“Quick learner. Adapts well. Takes initiative. Determined to find solutions to difficult problems.”</p>
+            <footer>Ovidiu Bahnean<span>CompuSystems</span></footer>
+          </blockquote>
+          <blockquote class="reveal">
+            <p>“Hardworking, resourceful, willing to go the extra mile. Works independently and with teams equally well.”</p>
+            <footer>Zakir Quraishi<span>Walgreens</span></footer>
+          </blockquote>
+        </div>
       </section>
 
       <section id="skills" class="section">
